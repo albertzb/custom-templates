@@ -1,5 +1,5 @@
 /*
- * Copyright 2024 albertzb [albertzb42@gmail.com].
+ * Copyright 2025 albertzb [albertzb42@gmail.com].
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,13 +13,23 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-@TemplateRegistration(
-        folder = "azb Swing GUI Forms",
-        iconBase="us/albertzb/templates/jframe/JFrame.png",
-        displayName = "#jframe_displayName",
-        content = {"jframe/JFrame.java.template","jframe/JFrame.form.template"},
-        description = "jframe/JFrame.html",
-        scriptEngine="freemarker")
+@TemplateRegistrations({
+    @TemplateRegistration(
+            folder = "azb Swing GUI Forms",
+            iconBase = "us/albertzb/templates/jframe/JFrame.png",
+            displayName = "#jframe_displayName",
+            content = {"jframe/JFrame.java.template", "jframe/JFrame.form.template"},
+            description = "jframe/JFrame.html",
+            scriptEngine = "freemarker"),
+    @TemplateRegistration(
+            folder = "azb Java",
+            iconBase = "us/albertzb/templates/exceptions/class.png",
+            displayName = "#customException_displayName",
+            content = {"exceptions/CustomException.java.template"},
+            description = "exceptions/CustomException.html",
+            scriptEngine = "freemarker")
+})
 package us.albertzb.templates;
 
 import org.netbeans.api.templates.TemplateRegistration;
+import org.netbeans.api.templates.TemplateRegistrations;

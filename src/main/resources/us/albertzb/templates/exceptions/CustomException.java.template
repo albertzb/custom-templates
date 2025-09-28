@@ -1,0 +1,66 @@
+<#assign licenseFirst = "/*">
+<#assign licensePrefix = " * ">
+<#assign licenseLast = " */">
+<#include "${project.licensePath}">
+
+<#if package?? && package != "">
+package ${package};
+
+</#if>
+
+/**
+ *
+ * @author  ${user}
+ */
+public class ${name} extends RuntimeException {
+
+    /**
+     * Creates a new instance of <code>${name}</code> without detail
+     * message.
+     */
+    public ${name}() {
+    }
+
+    /**
+     * Constructs an instance of <code>${name}</code> with the
+     * specified detail message.
+     *
+     * @param message the detail message.
+     */
+    public ${name}(String message) {
+        super(message);
+    }
+
+    /**
+     * Constructs an instance of <code>${name}</code> with the
+     * specified detail message and throwable cause.
+     *
+     * @param message the detail message.
+     */
+    public ${name}(String message, Throwable cause) {
+        super(message, cause);
+    }
+
+    /**
+     * Constructs an instance of <code>${name}</code> with the
+     * specified throwable cause.
+     *
+     * @param cause the nested cause of the exception.  (A null value is permitted, and indicates that the cause is nonexistent or unknown.)
+     */
+    public ${name}(Throwable cause) {
+        super(cause);
+    }
+
+    /**
+     * Constructs an instance of <code>${name}</code> with the
+     * specified detail message, cause and booleans.
+     *
+     * @param message the detail message.
+     * @param cause the nested cause of the exception. (A null value is permitted, and indicates that the cause is nonexistent or unknown.)
+     * @param enableSuppression whether or not suppression is enabled or disabled
+     * @param writableStackTrace whether or not the stack trace should be writable
+     */
+    public ${name}(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
+        super(message, cause, enableSuppression, writableStackTrace);
+    }
+}
