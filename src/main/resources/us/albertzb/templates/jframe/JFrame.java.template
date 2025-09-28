@@ -7,7 +7,7 @@
 package ${package};
 
 </#if>
-import static java.awt.EventQueue.invokeLater;
+import javax.swing.SwingUtilities;
 import javax.swing.JFrame;
 
 /**
@@ -29,25 +29,38 @@ public class ${name} extends JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        setTitle("${name}");
+        setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowClosing(java.awt.event.WindowEvent evt) {
-                exitForm(evt);
+                closeApplication();
             }
         });
 
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 400, Short.MAX_VALUE)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 300, Short.MAX_VALUE)
+        );
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    /** Exit the Application */
-    private void exitForm(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_exitForm
-        System.exit(0);
+    /** Close the Application */
+    private void closeApplication() {//GEN-FIRST:event_exitForm
+        // Additional actions before actually closing.
+        this.dispose();
     }//GEN-LAST:event_exitForm
 
     /**
     * @param args the command line arguments
     */
     public static void main(String args[]) {
-        invokeLater(() -> {
+        SwingUtilities.invokeLater(() -> {
             JFrame frame = new ${name}();
             frame.setLocationRelativeTo(null);
             frame.pack();

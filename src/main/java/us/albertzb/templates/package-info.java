@@ -14,13 +14,12 @@
  * limitations under the License.
  */
 @TemplateRegistration(
-        folder = "AZB Swing GUI Forms",
+        folder = "azb Swing GUI Forms",
         iconBase="us/albertzb/templates/jframe/JFrame.png",
-        displayName = "New JFrame",
-        content = {"JFrame.java.template","JFrame.form.template"},
-        description = "JFrame.html",
+        displayName = "#jframe_displayName",
+        content = {"jframe/JFrame.java.template","jframe/JFrame.form.template"},
+        description = "jframe/JFrame.html",
         scriptEngine="freemarker")
-package us.albertzb.templates.jframe;
+package us.albertzb.templates;
 
 import org.netbeans.api.templates.TemplateRegistration;
-import org.openide.util.NbBundle.Messages;
