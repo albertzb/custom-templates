@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>us.albertzb</groupId>
     <artifactId>custom-templates</artifactId>
-    <version>RELEASE260</version>
+    <version>RELEASE270</version>
     <packaging>nbm</packaging>
     
     <name>Custom Templates</name>
@@ -93,6 +93,6 @@ Easily transferrable between NB versions.</description>
         <maven.compiler.release>17</maven.compiler.release>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
-        <netbeans.version>RELEASE260</netbeans.version>
+        <netbeans.version>RELEASE270</netbeans.version>
     </properties>
 </project>
