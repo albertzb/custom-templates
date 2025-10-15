@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>us.albertzb</groupId>
     <artifactId>custom-templates</artifactId>
-    <version>RELEASE270</version>
+    <version>1.27.0</version>
     <packaging>nbm</packaging>
     
     <name>Custom Templates</name>
